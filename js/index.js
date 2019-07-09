@@ -35,6 +35,15 @@ if(ctx){
     ctx.quadraticCurveTo(125,25,75,25);
     ctx.stroke();
 	
+	// Копирование куска отображаемой области
+	var rectangle = new Path2D();
+	rectangle.rect(150, 150, 60, 60);
+	ctx.strokeStyle = "red";
+	ctx.stroke(rectangle);
+		
+	var imgData = ctx.getImageData(150, 150, 50, 50);	
+	ctx.putImageData(imgData, 10, 70);
+	
 	// Примечания: 
 	// 1. приоритет отрисовки по порядку исполнения stroke в коде - см. линию на прямоугольнике
 	// 2. все ...stroke функции используют цвет strokeStyle
