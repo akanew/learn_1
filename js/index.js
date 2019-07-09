@@ -54,3 +54,4 @@ else {
 	//browser don't support the canvas
 }
 
+//https://developer.mozilla.org/ru/docs/Web/API/Canvas_API/Tutorial/Рисование_фигур
