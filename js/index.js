@@ -18,7 +18,9 @@ if(ctx){
     ctx.fill();	                 // Отображение залитых фигур
 	ctx.closePath();
 	
-	
+	// Окружности и дуги
+	ctx.moveTo(30,120);
+	ctx.arc(20, 130, 20, 0, 90, true); //x,y,r, startAngle, endAngle, isArc or Circle
 	
 	ctx.stroke();                // Отображение контуных фигур
 	
